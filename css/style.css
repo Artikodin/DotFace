@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: superMario;
+    src: url(../fonts/SuperMario256.ttf);
+}
+
+@font-face {
+    font-family: grandstander;
+    src: url(../fonts/Grandstander-clean.ttf);
+}
+
+.linkAgence{
+	position: absolute;
+	z-index: 2;
+	width: 250px;
+	height: 50px;
+	top: 17px;
+	right: 0;
+}
+
+.agence{
+	font-family: superMario;
+	color: #048fc3;
+	text-shadow: 4px 4px 0 #161712;
+	position: absolute;
+	z-index: 3;
+	width: 150px;
+	height: 150px;
+	left: 0;
+	top: -14px;
+	-webkit-transition: all .4s ease; /* Safari */
+    transition: all .4s ease;
+}
+
+.agence:hover{
+	left: 15px;
+}
+
+.Tretour{
+	position: absolute;
+	z-index: 2;
+	width: 40px;
+	height: 50px;
+	right: 40px;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.background{
+	position: fixed;
+	background-image: url('../img/backgroundPjeu.png');
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.logo{
+	position: absolute;
+	z-index: 3;
+	width: 250px;
+	height: 250px;
+	top: -65px;
+    -ms-transform: rotate(-19deg); /* IE 9 */
+    -webkit-transform: rotate(-19deg); /* Chrome, Safari, Opera */
+    transform: rotate(-19deg);
+    -webkit-transition: all .4s ease; /* Safari */
+    transition: all .4s ease;
+}
+
+.triangleBlue{
+	position: absolute;
+	z-index: 1;
+	width: 300px;
+	height: 300px;
+	top: -150px;
+	left: -50px;
+	-ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+    -webkit-transition: all .4s ease; /* Safari */
+    transition: all .4s ease;
+	
+}
+
+.triangleDark{
+	position: absolute;
+	z-index: 2;
+	width: 300px;
+	height: 300px;
+	top: -150px;
+	left: -50px;
+	-ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: rotate(60deg); /* Chrome, Safari, Opera */
+    transform: rotate(60deg);
+    -webkit-transition: all .4s ease; /* Safari */
+    transition: all .4s ease;
+}
+
+.red1{
+	background-color: #aa0000;
+	position: absolute;
+	width: 100%;
+	height: 9px;
+	top: 0;
+}
+
+.red2{
+	background-color: #aa0000;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 17px;
+}
+
+.red3{
+	background-color: #aa0000;
+	position: absolute;
+	width: 100%;
+	height: 9px;
+	top: 77px;
+}
+
+#jeu{
+	margin-top: 250px;
+	margin-bottom: 20px;
+	max-height: 600px;
+}
+
+.padding0{
+	padding: 0 !important;
+}
+
+.border{
+	width: 800px;
+	height: 600px;
+	border: solid 3px black;
+	border-radius: 6px;
+}
+
+.regle{
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	background:#dcb20c;
+	border: solid 3px black;
+	border-radius: 6px;
+	-moz-box-shadow: 10px 10px 0px 0px #161712;
+	-webkit-box-shadow: 10px 10px 0px 0px #161712;
+	-o-box-shadow: 10px 10px 0px 0px #161712;
+	box-shadow: 10px 10px 0px 0px #161712;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#161712, Direction=134, Strength=0);
+}
+
+.touche{
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	background:#dcb20c;
+	border: solid 3px black;
+	border-radius: 6px;
+	-moz-box-shadow: 10px 10px 0px 0px #161712;
+	-webkit-box-shadow: 10px 10px 0px 0px #161712;
+	-o-box-shadow: 10px 10px 0px 0px #161712;
+	box-shadow: 10px 10px 0px 0px #161712;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#161712, Direction=134, Strength=0);
+}
+
+.txtRight{
+	text-align: right;
+}
+
+.txtLeft{
+	text-align: left;
+}
+
+.txtJustify{
+	text-align: justify;
+}
+
+.grandstander{
+	font-family: grandstander;
+	text-rendering: optimizelegibility;
+}
+
+.title{
+	font-family: superMario;
+	color: #aa0000;
+	text-shadow: 4px 4px 0 #161712;
+}
+
+.height{
+	height: 32px;
+}
+
+.margin{
+	margin-bottom:5px;
+}
+
+.title2{
+	margin-bottom:40px;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .logo {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    width: 180px;
+    top: -82px;
+  }
+  .agence{
+  	display: none;
+  }
+  .triangleBlue{
+	top: -320px;
+  }
+  .triangleDark{
+	left: -200px;
+  }
+}

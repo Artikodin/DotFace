@@ -1,0 +1,99 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device.width, initial-scale=1, maximum-scale=1 minimum-scale=1, user-scalable=no"/>
+    <meta name="description" content="Bienvenue sur le site du jeu Dot Face"/>
+    <meta name="generator" content="Bootstrap (3.3.6)"/>
+    <meta name="author" content="WASSE Artium"/>
+    <meta name="copyright" content="Artium Wasse" />
+    <meta http-equiv="Content-Language" content="fr-CA" />
+	<title>DotFace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="favicon.png" />
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <img src="img/logo.svg" class="logo" alt="logo DotFace">
+        <img src="img/triangleBlue.svg" class="triangleBlue img-responsive" alt="Triangle bleu">
+        <img src="img/triangleDark.svg" class="triangleDark img-responsive" alt="Triangle noir">
+        <a href="agence.html" class="linkAgence">
+            <h1 class="agence">AGENCE</h1>
+            <img src="img/Tretour.png" class="Tretour" alt="fleche retour"> 
+        </a>
+        <div class="red1"></div>
+        <div class="red2"></div>
+        <div class="red3"></div>
+    </header>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-offset-2 col-md-9 padding0" id="jeu"></div>
+        <div class="col-md-offset-2 col-md-8 regle">
+            <h1 class="txtLeft title">Regles:</h1>
+            <p class="txtJustify grandstander">
+            Vous incarnez un “Dot Face” c’est “une tête de poing” ou plutôt “un poing de tête”. 
+            Enfin, vous m’avez compris, non? C’est un poing, qui ressemble à une tête ou quelque chose comme ça. En fait, non, c’est un gant de boxe qui ressemble à une tête, mais après le jeu de mot n’aurait pas marché. Imaginez “Glove Box Face”, ce n’est pas très charismatique. Excusez moi, je m’éparpille. Vous voulez peut être savoir, pourquoi ils se battent, non? Aucune importance, c’est moi qui écris de toute façon.
+            <br>
+            <br>
+            Ils se battent parce que leurs maîtres ne savent pas se battre. Ils ont donc choisi de s'affronter dans un duel épique. Et comme ce sont des gants... bah... Ils peuvent pas se tuer. Ils doivent donc se pousser d’en haut de l’immeuble.
+            <br>
+            <br>
+            Si tu veux savoir comment jouer, regarde, en dessous il y a les touches ! 
+            Alors, à toi ou plutôt, à vous de jouer et n’oubliez pas d’utiliser le boost.
+            </p>
+        </div>
+        <div class="col-md-offset-2 col-md-8 touche">
+            <h1 class="title">Touches:</h1>
+            <div class="row">
+                <div class="col-sm-6 txtRight grandstander">
+                    <h2 class="title2">joueur 1</h2>
+                    <div class="row">
+                        <!-- les logos des touches proviennent de http://www.flaticon.com/ -->
+                        <div class="col-xs-6 margin"><img src="img/touche/LEFT.png" alt="touche fleche de gauche"><img src="img/touche/RIGHT.png" alt="touche fleche de droite"></div>
+                        <div class="col-xs-6 height margin txtLeft"><p>Gauche/Droite</p></div>
+                        <div class="col-xs-6 margin"><img src="img/touche/UP.png" alt="touche fleche du haut"></div>
+                        <div class="col-xs-6 height margin txtLeft"><p>Sauter</p></div>
+                        <div class="col-xs-6 margin"><img src="img/touche/DOWN.png" alt="touche fleche du bas"></div>
+                        <div class="col-xs-6 height margin txtLeft"><p>Boost</p></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 txtRight grandstander">
+                    <h2 class="title2">joueur 2</h2>
+                    <div class="row">
+                         <!-- les logos des touches proviennent de http://www.flaticon.com/ -->
+                        <div class="col-xs-6 margin"><img src="img/touche/Q.png" alt="touche fleche de gauche"><img src="img/touche/D.png" alt="touche fleche de droite"></div>
+                        <div class="col-xs-6 height margin txtLeft"><p>Gauche/Droite</p></div>
+                        <div class="col-xs-6 margin"><img src="img/touche/Z.png" alt="touche fleche du haut"></div>
+                        <div class="col-xs-6 height margin txtLeft"><p>Sauter</p></div>
+                        <div class="col-xs-6 margin"><img src="img/touche/S.png" alt="touche fleche du bas"></div>
+                        <div class="col-xs-6 height margin txtLeft"><p>Boost</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+    // Annule l'utilisation des flèches directionnel pour le scroll
+        window.addEventListener("keydown", function(e) {
+            // space and arrow keys
+            if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                e.preventDefault();
+            }
+        }, false);  
+    </script>
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <script type="text/javascript" src="js/boot.js"></script>
+    <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/mainMenu.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
